@@ -1,0 +1,10 @@
+@import "./Sidebar/_Sidebar.scss";
+@import "./Preview/_Preview.scss";
+.RootView {
+  display: flex;
+  padding: 20px;
+  color: $mainColor;
+  font-size: $small_font;
+
+
+}

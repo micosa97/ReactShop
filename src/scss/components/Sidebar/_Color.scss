@@ -1,0 +1,33 @@
+@import "Color/ColorItem";
+.Color {
+  padding-right: 15px;
+  padding-left: 10px;
+  padding-top: 30px;
+  .FilterHeader {
+    font-size: $big_font;
+    color: $secondColor;
+  }
+
+  .Upload {
+    margin-top: 10px;
+    border-style: solid;
+    border-color: $secondColor;
+    padding: 15px;
+    width: inherit;
+    height: inherit;
+  }
+  .ColorList{
+    display: flex;
+    flex-wrap: wrap;
+    .ColorItemSelected {
+      height: 20px;
+      width: 20px;
+      margin: 3px
+    }
+    .ColorItemUnselected {
+      height: 26px;
+      width: 26px;
+    }
+  }
+
+}

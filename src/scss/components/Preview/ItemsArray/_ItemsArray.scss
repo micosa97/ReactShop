@@ -1,0 +1,41 @@
+.ItemsArray {
+  display: flex;
+  width: auto;
+  flex-flow: row wrap;
+  .Item {
+    width: 220px;
+    height: 200px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    .RowWithPics {
+      display: flex;
+      margin-right: 20px;
+      .Stars {
+        display: flex;
+        flex-direction: row;
+      }
+      .Heart {
+        margin-left: auto;
+      }
+    }
+    .Title {
+      font-size: $big_font;
+    }
+
+    .SelectedFrame{
+      padding: 10px;
+      border-style: solid;
+      border-color: $supportColor;
+    }
+    .UnselectedFrame{
+      padding: 10px;
+      border-style: solid;
+      border-color: white;
+    }
+
+
+  }
+  //padding: 20px;
+  //border: 1px solid lightgrey;
+}

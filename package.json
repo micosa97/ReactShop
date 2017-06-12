@@ -1,0 +1,30 @@
+{
+  "name": "SklepReact",
+  "bin": {},
+  "version": "3.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "~6.18.2",
+    "babel-loader": "~6.2.8",
+    "babel-preset-latest": "~6.16.0",
+    "babel-preset-react": "~6.16.0",
+    "image-webpack-loader": "^3.3.1",
+    "node-sass": "^3.13.0",
+    "react": "~15.4.1",
+    "react-dom": "~15.4.1",
+    "react-hot-loader": "~3.0.0-beta.6",
+    "webpack": "~1.13.3",
+    "webpack-dev-server": "~1.16.2"
+  },
+  "scripts": {
+    "buildCss": "node-sass ./src/scss/main.scss ./public/main.css",
+    "buildJs": "webpack -p",
+    "watchCss": "node-sass --watch --recursive ./src/scss --output ./public",
+    "watchJs": "webpack-dev-server --hot --progress --colors --content-base=./public "
+  },
+  "keywords": [],
+  "author": "m97",
+  "license": "MIT"
+}

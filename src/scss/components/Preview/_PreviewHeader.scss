@@ -1,0 +1,60 @@
+.PreviewHeader {
+  display: flex;
+  flex-direction: column;
+
+  .MainRow {
+    display: flex;
+    justify-content: flex-end;
+
+    .SearchResultsCounter {
+      font-size: $big_font;
+      margin-right: auto;
+      display: inline-flex;
+      .Number {
+        color: $secondColor;
+      }
+    }
+
+
+    .NumberOfItemsOnPageSelector select {
+      width: 80px;
+
+
+      line-height: 1;
+      background-color: transparent;
+      border-color: $secondColor;
+      padding: 5px;
+
+
+
+      height: 34px;
+
+    }
+    .GridSizeSelector {
+      display: inline-flex;
+      padding-left: 20px;
+      .GridItem {
+        padding-left: 10px;
+      }
+    }
+  }
+  .Filters {
+    display: flex;
+    flex-wrap: wrap;
+    .Title{
+      padding: 15px;
+    }
+
+    .FilterMarker {
+      color: $secondColor;
+      display: flex;
+      border-style: solid;
+      border-color: $secondColor;
+      padding: 5px;
+      margin: 10px;
+      .RemoveButton {
+        margin-left: 3px;
+      }
+    }
+  }
+}

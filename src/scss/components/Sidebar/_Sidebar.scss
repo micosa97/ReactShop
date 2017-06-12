@@ -1,0 +1,74 @@
+@import "_Color.scss";
+.Sidebar {
+  padding: 5px;
+  
+  .Header {
+    font-size: $big_font;
+    width: 170px;
+
+  }
+
+  .FilterStandard {
+    padding-right: 15px;
+    padding-left: 10px;
+    padding-top: 30px;
+    .FilterHeader {
+      font-size: $big_font;
+      color: $secondColor;
+    }
+    .FilterItem {
+      padding-top: 5px;
+      display: flex;
+      .Selector {
+        margin-right: 5px;
+
+      }
+      .Amount{
+        margin-left: auto;
+      }
+    }
+    .MoreItems {
+      display: flex;
+      color: $supportColor;
+      .Caption {
+        margin-left: 8px;
+      }
+      .Amount{
+        margin-left: auto;
+        color: $mainColor;
+      }
+    }
+
+  }
+
+  .OrientationList{
+    display:flex;
+    .OrientationItem {
+      margin:10px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+
+  .RatingItem {
+    display: flex;
+    .Stars{
+      display: flex;
+    }
+  }
+  .Subtitle {
+    font-size: $small_font;
+    color: $mainColor;
+    margin-top: 10px;
+  }
+  .SubtitleGrey {
+    font-size: $small_font;
+    color: $secondColor;
+    margin-top: 10px;
+  }
+
+
+
+
+}
