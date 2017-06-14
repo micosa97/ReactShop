@@ -5,3 +5,6 @@
   padding: 20px;
   border: 1px solid lightgrey;
 }
+
+//importy w main.scss
+//dlatego też, że 1: wystarczą, 2: nie będzie cyklicznych zależności, 3: scss kompilacja będzie szybsza

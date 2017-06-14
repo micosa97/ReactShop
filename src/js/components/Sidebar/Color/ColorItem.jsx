@@ -15,3 +15,16 @@ export default class ColorItem extends React.Component {
 
     }
 }
+
+/**
+ * najlepiej było by to ugryźć inaczej:
+ *
+ * return <div
+ *          className="ColorItem (selected bądź brak)"
+ *          style={background:}
+ *          onClick={}></div>
+ *
+ * to w zupełności wystarczy.
+ * stylujes ColorItem
+ * jeżeli ColorItem ma dodatkowo klasę selected to w css na pseudoelemencie ::after bądź ::before dodajesz ikonkę chcecked z svg
+ */

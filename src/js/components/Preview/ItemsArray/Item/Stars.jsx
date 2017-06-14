@@ -25,3 +25,7 @@ export default class Stars extends React.Component {
 
 
 
+/**
+ * nazwa komponentu to lepiej RatingStars
+ * najlepiej gdyby to było utrzymywane w innym katalogu. Np. controls w components/
+ */

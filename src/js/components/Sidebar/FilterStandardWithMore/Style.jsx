@@ -2,6 +2,7 @@ import React from "react";
 import FilterItem from "./FilterItem.jsx"
 import MoreItems from "./MoreItems.jsx"
 
+//obowiązują komentarze z Industry
 export default class Style extends React.Component {
     render() {
         var remains=0;

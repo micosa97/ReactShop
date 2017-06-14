@@ -8,14 +8,14 @@ export default class PreviewHeader extends React.Component {
         return (
             <div className="PreviewHeader">
                 <div className="MainRow">
-                    <text className="SearchResultsCounter">Search Results: <div className="Number">72</div></text>
+                    <text className="SearchResultsCounter">Search Results: <div className="Number">72</div></text>  //zbędne elementy blokowe
                     <NumberOfItemsOnPageSelector/>
                     <GridSizeSelector/>
                 </div>
                 <div className="FiltersRow">
                     <Filters filters={this.props.filters} interactFilters={this.props.interactFilters}/>
                 </div>
-
+//formatowanie
 
             </div>
         )

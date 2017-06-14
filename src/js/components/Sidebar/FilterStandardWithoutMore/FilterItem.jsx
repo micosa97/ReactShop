@@ -1,5 +1,9 @@
 import React from "react";
 
+/**
+ * powtarzasz kod. To powinien być ten sam komponent co w FiltersStandardWithMore
+ * a najlepiej jako osobny komponent Checkbox przyjmujący wszystkie dane z zewnątrz
+ */
 export default class FilterItem extends React.Component {
     constructor(props) {
         super(props);

@@ -1,11 +1,11 @@
-@import "_Color.scss";
+@import "_Color.scss";  //wszystkie importy w main.scss
 .Sidebar {
   padding: 5px;
   
   .Header {
     font-size: $big_font;
     width: 170px;
-
+    //także formatowanie. Raz masz pustą linie raz sleektory są jedne pod drugimi.
   }
 
   .FilterStandard {
@@ -49,6 +49,7 @@
       flex-direction: column;
     }
   }
+  //style do tych komponentów powinny się znaleźć w dedydkowanych plikach scss
 
 
   .RatingItem {
@@ -65,7 +66,7 @@
   .SubtitleGrey {
     font-size: $small_font;
     color: $secondColor;
-    margin-top: 10px;
+    margin-top: 10px; //zobacz. selektor wyżeh .SubTitle. praktycznie to jest to samo. Można dać @extend i zmienuić color
   }
 
 
