@@ -1,12 +1,19 @@
-
+/**
+ * nazywajmy pliki tak samo jak exporty w nich zawarte. Jeżeli DataUtil to tutaj też tak powinno być
+ */
 var FakeData = {
-    generateFakeItems: function (count) {
+
+	/**
+     * clean code, piszmy nazwy metod tak aby pokazywały czym się dokładnie zajmują. W tym przypadku lepiej cały obiekt
+     * nazwać jako MockDataFactory a tą metodę generateMockProducts
+	 */
+	generateFakeItems: function (count) {
         var items = [];
         for (var i = 1; i <= count; i++) {
             items.push({
                     description: "Some Item " + i,
                     isFavourite: Math.random() >= 0.5,
-                    stars: Math.floor(Math.random() * 6),
+                    stars: Math.floor(Math.random() * 6),       //mógłbyś sobie zrobić dedytkowaną metodę do losowania intaZPrzedziału. Teraz jest nieczytelnie
                     size: (Math.floor(Math.random() * 18) * 5 + 10).toString() + "*" + (Math.floor(Math.random() * 18) * 5 + 10).toString() + "mm",
                 }
             )
@@ -14,7 +21,10 @@ var FakeData = {
         return items;
     },
 
-    "industry": [
+	/**
+     * ? jeżeli coś to metoda zwracająca taki obiekt albo pole. Teraz jest zawieszone w próżni
+	 */
+	"industry": [
         {"name": "All", "amount": 840},
         {"name": "Automotive", "amount": 112},
         {"name": "Fashion", "amount": 83},

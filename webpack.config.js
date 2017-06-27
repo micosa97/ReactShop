@@ -17,7 +17,7 @@ module.exports = {
 			query: {
 			presets: ['react', 'es2015']}
 			}, {
-            test: /\.(jpg|png|svg)$/,
+            test: /\.(jpg|png|svg)$/,	//zobacz. Przy tym formatowaniu nie widać w ogóle, że jest 2 loader
             loader: 'url-loader',
             options: {
                 limit: 25000,

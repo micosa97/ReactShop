@@ -7,7 +7,7 @@ export default class ItemsArray extends React.Component {
             <div className="ItemsArray">
                 {this.props.items.map((item, i) =>
                     <div key={`item ${i}`}>
-                        <Item item={item}/>
+                        <Item item={item}/> //key w Item
                     </div>
                 )}
 
